@@ -7,15 +7,23 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
+    
     var body: some View {
-        VStack {
-            Text("냉장고 들어갈 자리")
-        }
-        .padding()
+        
+        Text("냉장고들어갈자리")
+        
+//        Button(action: {
+//        }) {
+//            NavigationLink(destination: Eatting()) {
+//                Image(systemName: "giftcard.fill")
+//            }
+//        }
     }
+    
 }
 
+
 #Preview {
-    ContentView()
+    Home()
 }
