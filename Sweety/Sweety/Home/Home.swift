@@ -12,6 +12,7 @@ struct Home: View {
     var body: some View {
         
         Text("냉장고들어갈자리")
+        //냉장고 그려놨습니당
         
 //        Button(action: {
 //        }) {
