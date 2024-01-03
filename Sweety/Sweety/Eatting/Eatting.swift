@@ -8,28 +8,30 @@
 import SwiftUI
 
 struct Eatting: View {
-    @State private var scale: CGFloat = 1.0
-
+    let chocolateType: [String]
+    
+    @State private var imageIndex = 0
+    
+    init(chocolateType: [String] = Chocolate().mnm) {
+        self.chocolateType = chocolateType
+    }
+//MARK: - view
     var body: some View {
-        VStack {
-            Spacer()
-
-            Rectangle()
-                .frame(width: 100, height: 100)
-                .scaleEffect(scale)
-                .gesture(
-                    TapGesture()
-                        .onEnded { _ in
-                            withAnimation {
-                                self.scale *= 0.5
-                            }
-                        }
-                )
-
-            Spacer()
-        }
+        Image(chocolateType[imageIndex])
+            .resizable()
+            .scaledToFit()
+            .onTapGesture {
+                self.nextImage()
+            }
+    }
+    
+//MARK: - helper
+    func nextImage() {
+        imageIndex = (imageIndex + 1) % chocolateType.count
     }
 }
+
+//MARK: - preview
 
 #Preview {
     Eatting()
