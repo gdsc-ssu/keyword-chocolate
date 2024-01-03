@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5A122CF2B3A990C00C03F38 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* QuestionModel.swift */; };
+		E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */; };
+		E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* TextModel.swift */; };
 		E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122D12B3A9A0900C03F38 /* ContentView.swift */; };
 		E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDE32B3719BC005567CE /* SweetyApp.swift */; };
 		E5DDCDE62B3719BC005567CE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDE52B3719BC005567CE /* Home.swift */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E5A122CE2B3A990C00C03F38 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateModel.swift; sourceTree = "<group>"; };
+		E5A122CE2B3A990C00C03F38 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		E5A122D12B3A9A0900C03F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5DDCDE02B3719BC005567CE /* Sweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DDCDE32B3719BC005567CE /* SweetyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetyApp.swift; sourceTree = "<group>"; };
@@ -43,7 +45,7 @@
 		E5A122CD2B3A98ED00C03F38 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E5A122CE2B3A990C00C03F38 /* QuestionModel.swift */,
+				E5A122CE2B3A990C00C03F38 /* TextModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DDCDF62B371B97005567CE /* Eatting.swift */,
+				E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */,
 			);
 			path = Eatting;
 			sourceTree = "<group>";
@@ -189,12 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */,
 				E5DDCDF72B371B97005567CE /* Eatting.swift in Sources */,
 				E5DDCDE62B3719BC005567CE /* Home.swift in Sources */,
 				E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */,
 				E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */,
 				E5DDCDF22B371AFC005567CE /* List.swift in Sources */,
-				E5A122CF2B3A990C00C03F38 /* QuestionModel.swift in Sources */,
+				E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

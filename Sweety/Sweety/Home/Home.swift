@@ -11,17 +11,15 @@ struct Home: View {
     
     var body: some View {
         
-        Text("냉장고들어갈자리")
-        //냉장고 그려놨습니당
-        
-//        Button(action: {
-//        }) {
-//            NavigationLink(destination: Eatting()) {
-//                Image(systemName: "giftcard.fill")
-//            }
-//        }
+        NavigationStack{
+            NavigationLink(destination: Eatting()) {
+                Image("m&m0")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+            }
+        }
     }
-    
 }
 
 
