@@ -22,7 +22,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             Home()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Home", systemImage: "house")                        
                 }
                 .tag(Tab.home)
             List()

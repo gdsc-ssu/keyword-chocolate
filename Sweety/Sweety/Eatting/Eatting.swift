@@ -13,32 +13,37 @@ struct Eatting: View {
     @Binding var isSecondViewActive: Bool
     @State private var imageIndex = 0
     
-    init(chocolateType: [String] = Chocolate().mnm,isSecondViewActive: Binding<Bool>) {
+    init(chocolateType: [String] = Chocolate().mnm, isSecondViewActive: Binding<Bool>) {
         self.chocolateType = chocolateType
         self._isSecondViewActive = isSecondViewActive
     }
-    
-//MARK: - view
+
     var body: some View {
         VStack{
-            Image(chocolateType[imageIndex])
-                .resizable()
-                .scaledToFit()
-                .onTapGesture {
-                    self.nextImage()
-                }
-            
-            Text("클릭으로 초콜릿을 먹어주세요")
-                .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+            if imageIndex < chocolateType.count {
+                Image(chocolateType[imageIndex])
+                    .resizable()
+                    .scaledToFit()
+                    .onTapGesture {
+                        self.nextImage()
+                    }
+                Text("클릭으로 초콜릿을 먹어주세요")
+                    .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+                
+                
+            } else {
+                Text("우리 글귀!")
+                    .font(Font.custom("나눔손글씨 꽃내음", size: 40))
+                    .padding()
+                    .onTapGesture {
+                        isSecondViewActive = false
+                    }
+            }
         }
     }
-    
-//MARK: - helper
+
     func nextImage() {
-        imageIndex = (imageIndex + 1) % chocolateType.count
-        if imageIndex == 0 {
-                    isSecondViewActive = false
-                }
+        imageIndex += 1
     }
 }
 
