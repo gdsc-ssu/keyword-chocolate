@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Home: View {
-    @State var isSecondViewActive = false
+    @State var isEattingViewActive = false
     
     var body: some View {
         ZStack {
@@ -19,7 +19,7 @@ struct Home: View {
             Spacer()
             
             Button(action: {
-                isSecondViewActive = true
+                isEattingViewActive = true
             }) {
                 Image("m&m0")
                     .resizable()
@@ -30,8 +30,8 @@ struct Home: View {
             
         }
         
-        .fullScreenCover(isPresented: $isSecondViewActive, content: {
-                        Eatting(isSecondViewActive: $isSecondViewActive)
+        .fullScreenCover(isPresented: $isEattingViewActive, content: {
+                        Eatting(isSecondViewActive: $isEattingViewActive)
                     })
     }
 }

@@ -20,12 +20,17 @@ struct Eatting: View {
     
 //MARK: - view
     var body: some View {
-        Image(chocolateType[imageIndex])
-            .resizable()
-            .scaledToFit()
-            .onTapGesture {
-                self.nextImage()
-            }
+        VStack{
+            Image(chocolateType[imageIndex])
+                .resizable()
+                .scaledToFit()
+                .onTapGesture {
+                    self.nextImage()
+                }
+            
+            Text("클릭으로 초콜릿을 먹어주세요")
+                .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+        }
     }
     
 //MARK: - helper
