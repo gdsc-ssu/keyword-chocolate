@@ -8,20 +8,33 @@
 import SwiftUI
 
 struct Home: View {
+    @State var isSecondViewActive = false
     
     var body: some View {
-        
-        NavigationStack{
-            NavigationLink(destination: Eatting()) {
+        ZStack {
+            Image("home")
+                .resizable()
+                .scaledToFill()
+            
+            Spacer()
+            
+            Button(action: {
+                isSecondViewActive = true
+            }) {
                 Image("m&m0")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
             }
+            .padding()
+            
         }
+        
+        .fullScreenCover(isPresented: $isSecondViewActive, content: {
+                        Eatting(isSecondViewActive: $isSecondViewActive)
+                    })
     }
 }
-
 
 #Preview {
     Home()
