@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .home
+    @StateObject private var listModel = ListModel()
     
     enum Tab {
             case home
@@ -25,12 +26,13 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")                        
                 }
                 .tag(Tab.home)
-            List()
+            ListView()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(Tab.list)
         }
+        .environmentObject(listModel)
     }
 }
 
