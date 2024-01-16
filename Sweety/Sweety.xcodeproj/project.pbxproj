@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */; };
+		E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
 		E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* TextModel.swift */; };
 		E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122D12B3A9A0900C03F38 /* ContentView.swift */; };
 		E5D61CB82B55969B00EA36F8 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D61CB72B55969B00EA36F8 /* ListModel.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateModel.swift; sourceTree = "<group>"; };
+		E5797AB32B56D43400BEE375 /* lockHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockHome.swift; sourceTree = "<group>"; };
 		E5A122CE2B3A990C00C03F38 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		E5A122D12B3A9A0900C03F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5D61CB72B55969B00EA36F8 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DDCDE52B3719BC005567CE /* Home.swift */,
+				E5797AB32B56D43400BEE375 /* lockHome.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */,
 				E5DDCDF22B371AFC005567CE /* ListView.swift in Sources */,
 				E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */,
+				E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */,
 				E5D61CB82B55969B00EA36F8 /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

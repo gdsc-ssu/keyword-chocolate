@@ -11,15 +11,17 @@ struct Eatting: View {
     let chocolateType: [String]
 
     @Binding var isSecondViewActive: Bool
+    @Binding var homeViewActive: Bool
     @State private var imageIndex = 0
     @StateObject private var listModel: ListModel
 
     // 초기화 메서드에서 ListModel을 주입합니다.
     init(chocolateType: [String] = Chocolate().mnm,
          isSecondViewActive: Binding<Bool>,
-         listModel: ListModel) {
+         listModel: ListModel,homeViewActive: Binding<Bool>) {
         self.chocolateType = chocolateType
         self._isSecondViewActive = isSecondViewActive
+        self._homeViewActive = homeViewActive
         self._listModel = StateObject(wrappedValue: listModel)
     }
 
@@ -43,6 +45,7 @@ struct Eatting: View {
                             isSecondViewActive = false
                             listModel.dataArray.append(newRandomText)
                             print(listModel.dataArray)
+                            homeViewActive = true
                         }
                 }
             }
@@ -59,6 +62,6 @@ struct Eatting_Previews: PreviewProvider {
     static let listModel = ListModel()
 
     static var previews: some View {
-        Eatting(isSecondViewActive: $previewIsSecondViewActive, listModel: listModel)
+        Eatting(isSecondViewActive: $previewIsSecondViewActive, listModel: listModel, homeViewActive: .constant(false))
     }
 }

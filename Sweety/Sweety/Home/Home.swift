@@ -33,7 +33,7 @@ struct Home: View {
         
         .fullScreenCover(isPresented: $isEattingViewActive, content: {
             // Eatting 뷰 호출할 때 listModel을 주입.
-            Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel)
+            Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel, homeViewActive: .constant(false))
         })
         
     }
