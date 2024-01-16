@@ -33,7 +33,7 @@ struct Home: View {
         }
         
         .fullScreenCover(isPresented: $isEattingViewActive, content: {
-            // Eatting 뷰 호출할 때 homeViewActive를 바인딩으로 전달.
+            // Eatting 뷰 호출할 때 homeViewActive를 바인딩으로 전달
             Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel, homeViewActive: $homeViewActive)
         })
 
