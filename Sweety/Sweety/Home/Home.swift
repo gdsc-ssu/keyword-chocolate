@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Home: View {
+    @Binding var homeViewActive: Bool
     @State var isEattingViewActive = false
     @EnvironmentObject var listModel: ListModel
 
@@ -32,15 +33,16 @@ struct Home: View {
         }
         
         .fullScreenCover(isPresented: $isEattingViewActive, content: {
-            // Eatting 뷰 호출할 때 listModel을 주입.
-            Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel, homeViewActive: .constant(false))
+            // Eatting 뷰 호출할 때 homeViewActive를 바인딩으로 전달.
+            Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel, homeViewActive: $homeViewActive)
         })
+
         
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(homeViewActive: .constant(false))
     }
 }

@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection: Tab = .home
     @StateObject private var listModel = ListModel()
-    @State private var homeViewActive = false
+    @State private var homeViewActive = true
     
     enum Tab {
         case home
@@ -22,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             if homeViewActive == true {
-                Home()
+                Home(homeViewActive: $homeViewActive)
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }

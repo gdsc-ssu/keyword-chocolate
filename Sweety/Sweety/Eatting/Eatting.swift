@@ -18,12 +18,14 @@ struct Eatting: View {
     // 초기화 메서드에서 ListModel을 주입합니다.
     init(chocolateType: [String] = Chocolate().mnm,
          isSecondViewActive: Binding<Bool>,
-         listModel: ListModel,homeViewActive: Binding<Bool>) {
+         listModel: ListModel,
+         homeViewActive: Binding<Bool>) {
         self.chocolateType = chocolateType
         self._isSecondViewActive = isSecondViewActive
-        self._homeViewActive = homeViewActive
+        self._homeViewActive = homeViewActive  // 바인딩으로 받도록 수정
         self._listModel = StateObject(wrappedValue: listModel)
     }
+
 
     var body: some View {
         VStack {
@@ -45,7 +47,7 @@ struct Eatting: View {
                             isSecondViewActive = false
                             listModel.dataArray.append(newRandomText)
                             print(listModel.dataArray)
-                            homeViewActive = true
+                            homeViewActive = false
                         }
                 }
             }

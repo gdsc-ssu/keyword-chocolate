@@ -30,6 +30,7 @@ struct LockHome: View {
             if remainingTime <= 0 {
                 stopTimer()
                 homeViewActive = true
+                remainingTime = 1 * 1 * 10
             }
         }
     }
