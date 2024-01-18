@@ -16,10 +16,22 @@ struct ListView: View {
         VStack{
             Text("글귀 리스트")
                 .font(Font.custom("나눔손글씨 꽃내음", size: 32))
-            List(listModel.dataArray, id: \.self) { item in
-                Text(item)
-                    .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+            List{
+                ForEach(listModel.dataArray, id: \.self) { item in
+                    Text(item)
+                        .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                        .background(
+                            Image("paper")
+                                .resizable()
+                                .scaledToFill()
+                        )
+                        .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 50, trailing: 0))
+                        .offset(y: 20)
+                }
+                .listRowSeparator(.hidden)
             }
+            .listStyle(PlainListStyle())
             
         }
     }
