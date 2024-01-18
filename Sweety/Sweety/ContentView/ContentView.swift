@@ -11,28 +11,42 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .home
+    @StateObject private var listModel = ListModel()
+    @State private var homeViewActive = true
     
     enum Tab {
-            case home
-            case list
-        }
+        case home
+        case list
+    }
     
     var body: some View {
-        
         TabView(selection: $selection) {
-            Home()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-                .tag(Tab.home)
-            List()
+            if homeViewActive == true {
+                Home(homeViewActive: $homeViewActive)
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                    .tag(Tab.home)
+            } else {
+                LockHome(homeViewActive: $homeViewActive)
+                    .tabItem {
+                        Label("lock", systemImage: "lock")
+                    }
+                    .tag(Tab.home)
+            }
+            
+            ListView()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(Tab.list)
         }
+        .environmentObject(listModel)
     }
 }
+
+
+
 
 #Preview {
     ContentView()

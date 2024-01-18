@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "lockHome.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

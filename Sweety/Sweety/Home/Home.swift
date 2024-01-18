@@ -8,21 +8,41 @@
 import SwiftUI
 
 struct Home: View {
-    
+    @Binding var homeViewActive: Bool
+    @State var isEattingViewActive = false
+    @EnvironmentObject var listModel: ListModel
+
     var body: some View {
-        
-        NavigationStack{
-            NavigationLink(destination: Eatting()) {
+        ZStack {
+            Image("home")
+                .resizable()
+                .scaledToFill()
+
+            Spacer()
+
+            Button(action: {
+                isEattingViewActive = true
+                print(listModel.dataArray)
+            }) {
                 Image("m&m0")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
             }
+            .padding()
         }
+        
+        .fullScreenCover(isPresented: $isEattingViewActive, content: {
+            // Eatting 뷰 호출할 때 homeViewActive를 바인딩으로 전달
+            Eatting(isSecondViewActive: $isEattingViewActive, listModel: listModel, homeViewActive: $homeViewActive)
+        })
+
+        
     }
 }
 
-
-#Preview {
-    Home()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Home(homeViewActive: .constant(false))
+    }
 }

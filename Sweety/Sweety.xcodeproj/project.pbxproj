@@ -8,26 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */; };
+		E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
 		E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* TextModel.swift */; };
 		E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122D12B3A9A0900C03F38 /* ContentView.swift */; };
+		E5D61CB82B55969B00EA36F8 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D61CB72B55969B00EA36F8 /* ListModel.swift */; };
+		E5D61CBC2B55986A00EA36F8 /* 나눔손글씨 꽃내음.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D61CBB2B55986A00EA36F8 /* 나눔손글씨 꽃내음.ttf */; };
 		E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDE32B3719BC005567CE /* SweetyApp.swift */; };
 		E5DDCDE62B3719BC005567CE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDE52B3719BC005567CE /* Home.swift */; };
 		E5DDCDE82B3719BD005567CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DDCDE72B3719BD005567CE /* Assets.xcassets */; };
 		E5DDCDEB2B3719BD005567CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DDCDEA2B3719BD005567CE /* Preview Assets.xcassets */; };
-		E5DDCDF22B371AFC005567CE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDF12B371AFC005567CE /* List.swift */; };
+		E5DDCDF22B371AFC005567CE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDF12B371AFC005567CE /* ListView.swift */; };
 		E5DDCDF72B371B97005567CE /* Eatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDF62B371B97005567CE /* Eatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateModel.swift; sourceTree = "<group>"; };
+		E5797AB32B56D43400BEE375 /* lockHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockHome.swift; sourceTree = "<group>"; };
 		E5A122CE2B3A990C00C03F38 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		E5A122D12B3A9A0900C03F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5D61CB72B55969B00EA36F8 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		E5D61CBB2B55986A00EA36F8 /* 나눔손글씨 꽃내음.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "나눔손글씨 꽃내음.ttf"; sourceTree = "<group>"; };
+		E5D61CBD2B559A7000EA36F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5DDCDE02B3719BC005567CE /* Sweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DDCDE32B3719BC005567CE /* SweetyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetyApp.swift; sourceTree = "<group>"; };
 		E5DDCDE52B3719BC005567CE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E5DDCDE72B3719BD005567CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5DDCDEA2B3719BD005567CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E5DDCDF12B371AFC005567CE /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		E5DDCDF12B371AFC005567CE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E5DDCDF62B371B97005567CE /* Eatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +65,23 @@
 			path = ContentView;
 			sourceTree = "<group>";
 		};
+		E5D61CB92B55976600EA36F8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E5D61CBA2B55978300EA36F8 /* Fonts */,
+				E5DDCDE72B3719BD005567CE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E5D61CBA2B55978300EA36F8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5D61CBB2B55986A00EA36F8 /* 나눔손글씨 꽃내음.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E5DDCDD72B3719BC005567CE = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +101,14 @@
 		E5DDCDE22B3719BC005567CE /* Sweety */ = {
 			isa = PBXGroup;
 			children = (
+				E5D61CBD2B559A7000EA36F8 /* Info.plist */,
 				E5DDCDE32B3719BC005567CE /* SweetyApp.swift */,
 				E5A122D02B3A99F200C03F38 /* ContentView */,
 				E5DDCDF32B371B1A005567CE /* Home */,
 				E5DDCDF42B371B28005567CE /* List */,
 				E5DDCDF52B371B34005567CE /* Eatting */,
 				E5A122CD2B3A98ED00C03F38 /* Source */,
-				E5DDCDE72B3719BD005567CE /* Assets.xcassets */,
+				E5D61CB92B55976600EA36F8 /* Resource */,
 				E5DDCDE92B3719BD005567CE /* Preview Content */,
 			);
 			path = Sweety;
@@ -101,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DDCDE52B3719BC005567CE /* Home.swift */,
+				E5797AB32B56D43400BEE375 /* lockHome.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -108,7 +134,8 @@
 		E5DDCDF42B371B28005567CE /* List */ = {
 			isa = PBXGroup;
 			children = (
-				E5DDCDF12B371AFC005567CE /* List.swift */,
+				E5DDCDF12B371AFC005567CE /* ListView.swift */,
+				E5D61CB72B55969B00EA36F8 /* ListModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -180,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D61CBC2B55986A00EA36F8 /* 나눔손글씨 꽃내음.ttf in Resources */,
 				E5DDCDEB2B3719BD005567CE /* Preview Assets.xcassets in Resources */,
 				E5DDCDE82B3719BD005567CE /* Assets.xcassets in Resources */,
 			);
@@ -197,8 +225,10 @@
 				E5DDCDE62B3719BC005567CE /* Home.swift in Sources */,
 				E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */,
 				E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */,
-				E5DDCDF22B371AFC005567CE /* List.swift in Sources */,
+				E5DDCDF22B371AFC005567CE /* ListView.swift in Sources */,
 				E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */,
+				E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */,
+				E5D61CB82B55969B00EA36F8 /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +364,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sweety/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sweety/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -362,6 +393,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Sweety/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sweety/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
