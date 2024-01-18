@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct LockHome: View {
-    @Binding var homeViewActive: Bool  
-    @State private var remainingTime: TimeInterval = 1 * 1 * 10 //24*60*60으로 하면 24시간
+    @Binding var homeViewActive: Bool
+    @State private var remainingTime: TimeInterval = 1 * 1 * 20 //24*60*60으로 하면 24시간
+    @State private var timerStarted = false
     let timerInterval: TimeInterval = 1.0
-
+    
     var body: some View {
         ZStack {
             Image("lockHome")
@@ -24,19 +25,23 @@ struct LockHome: View {
                 .offset(x: 15 , y: -105)
         }
         .onAppear {
-            startTimer()
+            if !timerStarted {
+                startTimer()
+                timerStarted = true
+            }
         }
     }
-
+    
     private func startTimer() {
         Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: true) { timer in
             remainingTime -= timerInterval
-
+            
             if remainingTime <= 0 {
                 homeViewActive = true
                 remainingTime = 1 * 1 * 10
                 //여기도 테스트위해 바꿔놓은곳
                 print("시간끝")
+                timer.invalidate()
             }
         }
     }
