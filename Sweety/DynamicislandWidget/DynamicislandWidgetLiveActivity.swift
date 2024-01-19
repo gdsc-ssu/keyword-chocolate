@@ -40,10 +40,17 @@ struct DynamicislandWidgetLiveActivity: Widget {
           DynamicIslandExpandedRegion(.center) {
               VStack{
                   HStack{
+                      Image("m&m0")
+                          .resizable()
+                          .scaledToFit()
+                          .frame(width: 20,height: 20)
                       Text("남은시간😋:\(context.state.time)")
                   }
-                  ProgressView("", value: (context.attributes.totalTime - (Double(context.state.intTime))) / context.attributes.totalTime)
-                      .padding()
+                  HStack{
+                      Text("🍫")
+                      ProgressView("", value: (context.attributes.totalTime - (Double(context.state.intTime))) / context.attributes.totalTime)
+                      Text("🍩")
+                  }
               }
           }
       } compactLeading: {
@@ -51,7 +58,7 @@ struct DynamicislandWidgetLiveActivity: Widget {
       } compactTrailing: {
         Text("🍩")
       } minimal: {
-        Text("Min")
+        Text("🍭")
       }
       .keylineTint(Color.white)
     }

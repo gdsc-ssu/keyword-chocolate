@@ -12,7 +12,7 @@ import Combine
 
 struct LockHome: View {
     @Binding var homeViewActive: Bool
-    @State private var remainingTime: TimeInterval = 1 * 2 * 60 //24*60*60으로 하면 24시간
+    @State private var remainingTime: TimeInterval = 1 * 1 * 60 //24*60*60으로 하면 24시간
     @State private var timerStarted = false
     let timerInterval: TimeInterval = 1.0
     var activity: Activity<DynamicislandWidgetAttributes>?
@@ -32,7 +32,6 @@ struct LockHome: View {
             if !timerStarted {
                 startTimer()
                 timerStarted = true
-                ///////////////////////////
             }
         }
     }
@@ -47,6 +46,7 @@ struct LockHome: View {
                 remainingTime = 1 * 1 * 10
                 //여기도 테스트위해 바꿔놓은곳
                 print("시간끝")
+                offLiveActivity()
                 Notify()
                 timer.invalidate()
             }
@@ -71,6 +71,15 @@ struct LockHome: View {
             for activity in Activity<DynamicislandWidgetAttributes>.activities{
                 await activity.update(using: updatedTime)
                 print(updatedTime)
+            }
+        }
+    }
+    
+    func offLiveActivity(){
+        Task{
+            for activity in Activity<DynamicislandWidgetAttributes>.activities{
+                await activity.end(using: nil, dismissalPolicy: .default)
+                print("라이브액티비티 종료")
             }
         }
     }
