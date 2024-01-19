@@ -19,7 +19,7 @@ struct ListView: View {
             List{
                 ForEach(listModel.dataArray, id: \.self) { item in
                     Text(item)
-                        .font(Font.custom("나눔손글씨 꽃내음", size: 32))
+                        .font(Font.custom("나눔손글씨 꽃내음", size: 25))
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
                         .background(
                             Image("paper")
