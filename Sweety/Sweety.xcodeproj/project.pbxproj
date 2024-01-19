@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53E77DC2B59A43800963EB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53E77DB2B59A43800963EB7 /* WidgetKit.framework */; };
+		E53E77DE2B59A43800963EB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53E77DD2B59A43800963EB7 /* SwiftUI.framework */; };
+		E53E77E12B59A43800963EB7 /* DynamicislandWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E02B59A43800963EB7 /* DynamicislandWidgetBundle.swift */; };
+		E53E77E32B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */; };
+		E53E77E52B59A43800963EB7 /* DynamicislandWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E42B59A43800963EB7 /* DynamicislandWidget.swift */; };
+		E53E77E72B59A43800963EB7 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E62B59A43800963EB7 /* AppIntent.swift */; };
+		E53E77E92B59A43900963EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53E77E82B59A43900963EB7 /* Assets.xcassets */; };
+		E53E77ED2B59A43900963EB7 /* DynamicislandWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E53E77D92B59A43700963EB7 /* DynamicislandWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E53E77F32B59AA4F00963EB7 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
+		E53E77F82B59AE8100963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */; };
 		E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */; };
 		E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
 		E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* TextModel.swift */; };
@@ -21,7 +31,40 @@
 		E5DDCDF72B371B97005567CE /* Eatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCDF62B371B97005567CE /* Eatting.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E53E77EB2B59A43900963EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5DDCDD82B3719BC005567CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53E77D82B59A43700963EB7;
+			remoteInfo = DynamicislandWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E53E77F12B59A43900963EB7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E53E77ED2B59A43900963EB7 /* DynamicislandWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E53E77D92B59A43700963EB7 /* DynamicislandWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DynamicislandWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53E77DB2B59A43800963EB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E53E77DD2B59A43800963EB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E53E77E02B59A43800963EB7 /* DynamicislandWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicislandWidgetBundle.swift; sourceTree = "<group>"; };
+		E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicislandWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		E53E77E42B59A43800963EB7 /* DynamicislandWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicislandWidget.swift; sourceTree = "<group>"; };
+		E53E77E62B59A43800963EB7 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		E53E77E82B59A43900963EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E53E77EA2B59A43900963EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateModel.swift; sourceTree = "<group>"; };
 		E5797AB32B56D43400BEE375 /* lockHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockHome.swift; sourceTree = "<group>"; };
 		E5A122CE2B3A990C00C03F38 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
@@ -39,6 +82,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E53E77D62B59A43700963EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53E77DE2B59A43800963EB7 /* SwiftUI.framework in Frameworks */,
+				E53E77DC2B59A43800963EB7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5DDCDDD2B3719BC005567CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,6 +101,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E53E77DA2B59A43800963EB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E53E77DB2B59A43800963EB7 /* WidgetKit.framework */,
+				E53E77DD2B59A43800963EB7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E53E77DF2B59A43800963EB7 /* DynamicislandWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E53E77E02B59A43800963EB7 /* DynamicislandWidgetBundle.swift */,
+				E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */,
+				E53E77E42B59A43800963EB7 /* DynamicislandWidget.swift */,
+				E53E77E62B59A43800963EB7 /* AppIntent.swift */,
+				E53E77E82B59A43900963EB7 /* Assets.xcassets */,
+				E53E77EA2B59A43900963EB7 /* Info.plist */,
+			);
+			path = DynamicislandWidget;
+			sourceTree = "<group>";
+		};
 		E5A122CD2B3A98ED00C03F38 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				E5DDCDE22B3719BC005567CE /* Sweety */,
+				E53E77DF2B59A43800963EB7 /* DynamicislandWidget */,
+				E53E77DA2B59A43800963EB7 /* Frameworks */,
 				E5DDCDE12B3719BC005567CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E5DDCDE02B3719BC005567CE /* Sweety.app */,
+				E53E77D92B59A43700963EB7 /* DynamicislandWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +229,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E53E77D82B59A43700963EB7 /* DynamicislandWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53E77EE2B59A43900963EB7 /* Build configuration list for PBXNativeTarget "DynamicislandWidgetExtension" */;
+			buildPhases = (
+				E53E77D52B59A43700963EB7 /* Sources */,
+				E53E77D62B59A43700963EB7 /* Frameworks */,
+				E53E77D72B59A43700963EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicislandWidgetExtension;
+			productName = DynamicislandWidgetExtension;
+			productReference = E53E77D92B59A43700963EB7 /* DynamicislandWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E5DDCDDF2B3719BC005567CE /* Sweety */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5DDCDEE2B3719BD005567CE /* Build configuration list for PBXNativeTarget "Sweety" */;
@@ -159,10 +253,12 @@
 				E5DDCDDC2B3719BC005567CE /* Sources */,
 				E5DDCDDD2B3719BC005567CE /* Frameworks */,
 				E5DDCDDE2B3719BC005567CE /* Resources */,
+				E53E77F12B59A43900963EB7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E53E77EC2B59A43900963EB7 /* PBXTargetDependency */,
 			);
 			name = Sweety;
 			productName = Sweety;
@@ -176,9 +272,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					E53E77D82B59A43700963EB7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					E5DDCDDF2B3719BC005567CE = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -198,11 +297,20 @@
 			projectRoot = "";
 			targets = (
 				E5DDCDDF2B3719BC005567CE /* Sweety */,
+				E53E77D82B59A43700963EB7 /* DynamicislandWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E53E77D72B59A43700963EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53E77E92B59A43900963EB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5DDCDDE2B3719BC005567CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +324,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E53E77D52B59A43700963EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53E77E12B59A43800963EB7 /* DynamicislandWidgetBundle.swift in Sources */,
+				E53E77E72B59A43800963EB7 /* AppIntent.swift in Sources */,
+				E53E77E52B59A43800963EB7 /* DynamicislandWidget.swift in Sources */,
+				E53E77E32B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */,
+				E53E77F32B59AA4F00963EB7 /* lockHome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5DDCDDC2B3719BC005567CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +345,7 @@
 				E5DDCDE62B3719BC005567CE /* Home.swift in Sources */,
 				E5A122D22B3A9A0900C03F38 /* ContentView.swift in Sources */,
 				E5DDCDE42B3719BC005567CE /* SweetyApp.swift in Sources */,
+				E53E77F82B59AE8100963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */,
 				E5DDCDF22B371AFC005567CE /* ListView.swift in Sources */,
 				E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */,
 				E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */,
@@ -234,7 +355,67 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E53E77EC2B59A43900963EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53E77D82B59A43700963EB7 /* DynamicislandWidgetExtension */;
+			targetProxy = E53E77EB2B59A43900963EB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E53E77EF2B59A43900963EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicislandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicislandWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rx.Sweety.DynamicislandWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E53E77F02B59A43900963EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicislandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicislandWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rx.Sweety.DynamicislandWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E5DDCDEC2B3719BD005567CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +538,7 @@
 		E5DDCDEF2B3719BD005567CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +547,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sweety/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,6 +569,7 @@
 		E5DDCDF02B3719BD005567CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +578,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sweety/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,6 +600,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E53E77EE2B59A43900963EB7 /* Build configuration list for PBXNativeTarget "DynamicislandWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53E77EF2B59A43900963EB7 /* Debug */,
+				E53E77F02B59A43900963EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5DDCDDB2B3719BC005567CE /* Build configuration list for PBXProject "Sweety" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

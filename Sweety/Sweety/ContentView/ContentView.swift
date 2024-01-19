@@ -42,6 +42,11 @@ struct ContentView: View {
                 .tag(Tab.list)
         }
         .environmentObject(listModel)
+        .onAppear(perform: {
+            
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert]) { (_, _) in
+            }
+        })
     }
 }
 
