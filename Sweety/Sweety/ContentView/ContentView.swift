@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection: Tab = .home
     @StateObject private var listModel = ListModel()
-    @State private var homeViewActive = true
+    @AppStorage("homeViewActive") private var homeViewActive = true
     
     enum Tab {
         case home
@@ -42,6 +42,11 @@ struct ContentView: View {
                 .tag(Tab.list)
         }
         .environmentObject(listModel)
+        .onAppear(perform: {
+            
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert]) { (_, _) in
+            }
+        })
     }
 }
 

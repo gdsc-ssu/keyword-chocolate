@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ActivityKit
 
 struct Home: View {
     @Binding var homeViewActive: Bool
