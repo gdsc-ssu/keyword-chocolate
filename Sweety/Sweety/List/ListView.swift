@@ -26,8 +26,8 @@ struct ListView: View {
                                 .resizable()
                                 .scaledToFill()
                         )
-                        .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 50, trailing: 0))
-                        .offset(y: 20)
+                        .listRowInsets(EdgeInsets(top: 33, leading: 0, bottom: item.count > 25 ? -10 : 40, trailing: 0))
+                        .offset(y:item.count > 25 ? -20 : 20)
                 }
                 .listRowSeparator(.hidden)
             }
