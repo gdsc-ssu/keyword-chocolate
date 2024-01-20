@@ -11,12 +11,12 @@
 		E53E77DE2B59A43800963EB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53E77DD2B59A43800963EB7 /* SwiftUI.framework */; };
 		E53E77E12B59A43800963EB7 /* DynamicislandWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E02B59A43800963EB7 /* DynamicislandWidgetBundle.swift */; };
 		E53E77E32B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */; };
-		E53E77E52B59A43800963EB7 /* DynamicislandWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E42B59A43800963EB7 /* DynamicislandWidget.swift */; };
 		E53E77E72B59A43800963EB7 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E62B59A43800963EB7 /* AppIntent.swift */; };
 		E53E77E92B59A43900963EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53E77E82B59A43900963EB7 /* Assets.xcassets */; };
 		E53E77ED2B59A43900963EB7 /* DynamicislandWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E53E77D92B59A43700963EB7 /* DynamicislandWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E53E77F32B59AA4F00963EB7 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
 		E53E77F82B59AE8100963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E22B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift */; };
+		E53E77FA2B5A765500963EB7 /* DynamicislandWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53E77E42B59A43800963EB7 /* DynamicislandWidget.swift */; };
 		E54B0FF82B454C1200CC1925 /* ChocolateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FF72B454C1200CC1925 /* ChocolateModel.swift */; };
 		E5797AB42B56D43400BEE375 /* lockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5797AB32B56D43400BEE375 /* lockHome.swift */; };
 		E5A122CF2B3A990C00C03F38 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A122CE2B3A990C00C03F38 /* TextModel.swift */; };
@@ -329,8 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53E77E12B59A43800963EB7 /* DynamicislandWidgetBundle.swift in Sources */,
+				E53E77FA2B5A765500963EB7 /* DynamicislandWidget.swift in Sources */,
 				E53E77E72B59A43800963EB7 /* AppIntent.swift in Sources */,
-				E53E77E52B59A43800963EB7 /* DynamicislandWidget.swift in Sources */,
 				E53E77E32B59A43800963EB7 /* DynamicislandWidgetLiveActivity.swift in Sources */,
 				E53E77F32B59AA4F00963EB7 /* lockHome.swift in Sources */,
 			);

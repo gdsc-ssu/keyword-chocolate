@@ -12,7 +12,7 @@ import Combine
 
 struct LockHome: View {
     @Binding var homeViewActive: Bool
-    @State private var remainingTime: TimeInterval = 1 * 1 * 60 //24*60*60으로 하면 24시간
+    @State private var remainingTime: TimeInterval = 1 * 1 * 10 //24*60*60으로 하면 24시간
     @State private var timerStarted = false
     let timerInterval: TimeInterval = 1.0
     var activity: Activity<DynamicislandWidgetAttributes>?
@@ -95,7 +95,8 @@ struct LockHome: View {
     func Notify(){
         
         let content = UNMutableNotificationContent()
-        content.title = "시간끝"
+        content.title = "새로운 초콜릿이 도착했어요!"
+        //Text("힘들때 Sweety를 초콜릿 처럼 꺼내먹어요")
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
