@@ -27,8 +27,10 @@ struct DynamicislandWidgetLiveActivity: Widget {
     ActivityConfiguration(for: DynamicislandWidgetAttributes.self) { context in
       // Lock screen/banner UI goes here
       VStack {
-          Text("\(context.state.time)")
+          Text("다음초콜릿까지 남은시간:\(context.state.time) 🤤")
+          ProgressView("", value: (context.attributes.totalTime - (Double(context.state.intTime))) / context.attributes.totalTime)
       }
+      .padding()
       //.activityBackgroundTint(Color.gray)
       //.activitySystemActionForegroundColor(Color.black)
       
@@ -40,10 +42,6 @@ struct DynamicislandWidgetLiveActivity: Widget {
           DynamicIslandExpandedRegion(.center) {
               VStack{
                   HStack{
-                      Image("m&m0")
-                          .resizable()
-                          .scaledToFit()
-                          .frame(width: 20,height: 20)
                       Text("남은시간😋:\(context.state.time)")
                   }
                   HStack{
